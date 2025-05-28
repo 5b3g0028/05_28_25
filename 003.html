@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>j8介紹</h1>
+        <br/>
+        <button onclick="changetoabout();">1花蓓蓓</button>
+        <button onclick="changetoexpos();">2向日花怪</button>
+
+        <div id="about">
+            2024花蓓蓓季到啦！每年5月至6月初夏季節，粉藍、粉紫、粉紅等各色錦簇花團，從陽明山竹子湖、新北萬里高家花田、雪霸休閒農場、武陵農場、明池森林遊樂區等，精選全台超過10處觀賞繡球花的推薦景點，賞花之餘，也一起解密繡球花冷知識！
+            <img src="2fb6fcbdaec3dbc9a35f6ab8403279b602b4a49b.png">
+        </div>
+        <div id="exps" style="display:none">
+            向日花怪，取其優雅文質玲瓏心，又可意會又可言傳，故在本省自從最早有「向日花」的稱呼出現後，便沿用成習，也因其花朵頗似穿著膨鬆舞裙、迎風招展婆娑起舞的女郎，而有人稱為「跳舞葵」，在切花和盆花市場上都佔有很重要的一席之地。
+            <img src="590cb6ab1e77d32ef11aa3c009b73615.png">
+
+        </div>
+    </div>    
+    
+    <script>
+    function changetoabout() {
+        document.getElementById("about").style.display = "block";
+        document.getElementById("exps").style.display = "none";
+    }
+
+    function changetoexpos(){
+        document.getElementById("about").style.display = "none";
+        document.getElementById("exps").style.display = "block";
+    }
+    </script>
+</body>
+</html>
