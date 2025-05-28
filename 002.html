@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>喜歡的田雞</title>
+</head>
+<body>
+    <form>
+        <p>喜歡的田雞</p>
+        <input type="radio" name="dessert" value="尾蟾科">尾蟾科<br>
+        <input type="radio" name="dessert" value="鈴蟾科">鈴蟾科<br>
+        <input type="radio" name="dessert" value="盤舌蟾科">盤舌蟾科<br>
+        <input type="radio" name="dessert" value="滑蹠蟾科">滑蹠蟾科<br><br>
+
+        <input type="button" value="提交" onclick="showResult()">
+        <input type="reset" value="重設">
+    </form>
+
+    <script>
+        function showResult() {
+            var result = '';
+            var dessert = document.getElementsByName('dessert');
+
+            for (var i = 0; i < dessert.length; i++) {
+                if (dessert[i].checked) {
+                    result = dessert[i].value;
+                    break;
+                }
+            }
+            if (result) {
+                window.alert("你選擇的是：" + result);
+            } else {
+                window.alert("你還沒選任何田雞喔！");
+            }
+        }
+    </script>
+</body>
+</html>
